@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Imagix</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/basic.min.css">
+        <link rel="stylesheet" href="/public/css/nav.css">
+        <link rel="stylesheet" href="/public/css/style.css">
+    </head>
+    <body>
+    <!--<button id="openmodal" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#imagix-modal">Open Modal</button>-->
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              </button>
+              <a class="navbar-brand" href="/">Imagix</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="/about"><span class="fa fa-info-circle"></span> About</a></li>
+                <li><a href="https://github.com/ganeshmkumar/Imagix" target="_blank"><span class="fa fa-github"></span> Github</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <section class="container-fluid" id="app">
+            <div class="row">
+                <div class="col-md-12 col-xs-12" id="info">
+                    <h1 class="title">Imagix</h1>
+                    <p class="description">Upload and host your images. No sign-up required</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-xs-8 col-xs-offset-2 col-md-offset-5">
+                    <button id="upload-picture" class="btn btn-default btn-block">UPLOAD PICTURE</button>    
+                </div>
+            </div>
+            <form role="form" class="form" action="upload" enctype="multipart/form-data">
+                <div class="form-group upload">
+                    <input class="form-control" type="file" name="image" accept="image/*" id="image" required="true" />
+                </div>
+            </form>  
+
+            <div class="row error">
+                <div class="col-md-12 col-xs-12">
+                    <p class="size-limit">Maximum image size should be 200KB. <a href="/about" target="_blank">Know why?</a></p>
+                    <p class="server-error">Internal sever error</p>
+                </div>
+            </div>
+            <div class="row author">
+                <div class="col-md-12 col-xs-12">
+                    <span id="author">by <a href="https://ganeshmkumar.github.io" target="_blank">GaNeShKuMaRm </a></span><span class="fa fa-smile-o"></span>
+                </div>
+            </div>
+        </section>
+        
+
+        <div id="imagix-modal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Imagix</h4>
+              </div>
+              <div class="modal-body">
+                <label for="">Image URL</label>
+                <div class="input-group" id="image-url">
+                    <input type="text" class="form-control">
+                    <span class="input-group-addon btn" id="copy">Copy</span>
+                </div>
+                <div class="row result">
+                    <div class="col-md-6">
+                        <img id="preview" class="img img-responsive" src="" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h5>HTML Embed</h5>    
+                        <p id="image-embed"></p>    
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger modal-close" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--<script src="/public/js/dropzone.js"></script>-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="/public/js/script.js"></script>
+    </body>
+</html>

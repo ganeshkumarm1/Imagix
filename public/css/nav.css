@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|QuickSand|Josefin+Sans:600');
+.navbar {
+	padding: 10px 20px;
+	border-radius: 0;
+	background: #08233E;
+	border-color: #08233E;
+}
+
+.navbar-toggle {
+	border-color: transparent !important;
+}
+
+.navbar-nav span {
+	margin-right: 3px;
+}
+
+.navbar-nav a {
+	font-family: 'Josefin Sans', cursive;
+	font-size: 18px;
+	color: #ffffff !important;
+}
+
+.navbar-brand {
+	font-family: 'Fredoka One', cursive;
+	color: #fafafa !important;
+	font-size: 25px;
+}
+
+navbar-toggle:focus {
+	outline: none;
+	box-shadow: none;
+	border-color: transparent;
+}
+
+.navbar-toggle:focus {
+	background: transparent !important;
+}
+
+.navbar-nav > .active > a {
+  color: #F8823C !important;
+  background-color: transparent !important;
+}

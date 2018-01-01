@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|QuickSand|Josefin+Sans:600');
+
+body {
+	background-color: #F8823C;
+	text-align: center;
+}
+
+#about {
+	position: relative;
+	top: 90px;
+}
+
+.title {
+	font-family: 'Fredoka One', sans-serif;
+	color: #ffffff;
+	font-size: 70px;
+}
+
+.subtitle {
+	color: #ffffff;
+	font-size: 40px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.description {
+	margin-top: 30px;
+	font-family: 'QuickSand', cursive;
+	font-size: 20px;	
+	color: #08233E;
+}
+
+@media only screen and (max-width: 768px) {
+	#about {
+	top: 10px;
+}
+}

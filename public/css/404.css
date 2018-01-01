@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans:600');
+
+body {
+	background: #F8823C;
+	color: #ffffff;
+}
+
+#error404 {
+	position: relative;
+	top: 100px;
+}
+
+h1 {
+	font-family: 'Fredoka One', cursive !important;
+	font-size: 70px;
+}
+
+h3 {
+	font-family: 'Josefin Sans', cursive;
+	font-size: 80px;
+}
+
+
+h1, h3 {
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	#error404 {
+	top: 50px;
+}
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|QuickSand|Josefin+Sans:600');
+#app {
+	position: relative;
+	top: 100px;
+}
+
+
+#image {
+	display: none;
+}
+
+body {
+	background-color: #F8823C;
+}
+
+#info {
+	text-align: center;
+	
+}
+
+.description {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	color: #fafafa;
+}
+.title {
+	font-size: 80px;
+	font-family: 'Fredoka One', cursive;
+	color: #ffffff;
+}
+
+#upload-picture:focus, #upload-picture:active {
+	outline: none;
+	box-shadow: none;
+	border-color: transparent;
+}
+
+#upload-picture {
+	margin-top: 20px;
+	border: solid 4px;
+	border-color: #08223e;
+	border-radius: 0;
+	padding: 10px 0px;
+	font-weight: bold;
+	color: #fafafa;
+	background: #08223e;
+	border-radius: 30px;
+	font-family: 'QuickSand', sans-serif;
+	font-size: 15px;
+	box-shadow: 0 3px 4px rgba(0,0,0,0.16), 0 1px 6px rgba(0,0,0,0.23);
+}
+
+#upload-picture:hover {
+	cursor: pointer;
+}
+
+.size-limit, .server-error	 {
+	display: none;
+}
+
+.error p {
+	font-family: 'QuickSand', cursive;
+	color: #ffffff;
+	text-align: center;
+}
+
+a {
+	font-size: 17px;
+	text-decoration: none;
+}
+
+.error a {
+	color: #3F51B5;
+}
+
+.author {
+	position: relative;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.author a, .author span {
+	color: #ffffff;
+}
+
+.author a {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.author a:hover, .author a:active, .author a:focus {
+	text-decoration: none !important;
+	opacity: 0.8;
+}
+
+#imagix-modal div {
+	border-radius: 5px !important;
+}
+
+
+.modal-title {
+	text-align: center;
+	font-family: 'Fredoka One', sans-serif;
+	font-size: 30px;
+}
+
+#image-embed {
+	border-radius: 3px;
+	padding: 20px;
+	background: #F1F1F1;
+	margin-top: 10px;
+	word-wrap: break-word;
+}
+
+#preview {
+	margin-top: 10px;
+}
+
+#imagix-modal label, #imagix-modal h5 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+}
+
+#imagix-modal input {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+}
+
+.result .col-md-6 {
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	#app {
+	top: 50px;
+}
+}
